@@ -2,6 +2,6 @@ from utils import remove_duplicates
 
 
 def test_remove_duplicates():
-    emails = ["test", "test2", "test"]
+    phone_numbers = ["12345", "12345", "123456"]
 
-    assert remove_duplicates(emails) == ["test", "test2"]
+    assert remove_duplicates(phone_numbers) == ["12345", "123456"]

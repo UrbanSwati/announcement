@@ -1,3 +1,3 @@
-def remove_duplicates(emails):
-    unique_emails = list(set(emails))
-    return unique_emails
+def remove_duplicates(strings):
+    unique_strings = list(set(strings))
+    return unique_strings
