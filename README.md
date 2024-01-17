@@ -4,6 +4,8 @@
 This is a simple API to manage announcements.
 
 ## Installation
+You will need Python 3.9.1 or higher to run this project.
+
 To install the project dependences, run:
 
 ```
