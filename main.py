@@ -16,6 +16,6 @@ def read_root():
 @app.post("/anouncement/")
 def read_item(anouncement: Announcement):
 
-    anouncement.email_addresses = remove_duplicates(anouncement.email_addresses)
+    anouncement.phone_numbers = remove_duplicates(anouncement.phone_numbers)
 
     return anouncement
