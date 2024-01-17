@@ -11,12 +11,12 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 @app.get("/health")
-def read_root():
+def health_check():
     return {"Hello": "World"}
 
 
 @app.post("/anouncement/")
-def read_item(anouncement: Announcement, status_code=201):
+def create_anouncement(anouncement: Announcement, status_code=201):
     try:
         send_announcement(anouncement)
     except Exception as e:
