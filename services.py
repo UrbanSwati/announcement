@@ -5,6 +5,7 @@ from datetime import datetime
 
 def send_to_whatsapp(phone_number: List[str], message: str):
     """Send message to whatsapp phone numbers"""
+    #TODO: update reciepent status to sent in db, perhaps retry if failed to send to specific number
     pass
 
 def send_announcement(announcement: Announcement):

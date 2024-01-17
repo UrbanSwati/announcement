@@ -19,6 +19,9 @@ To run the server, run:
 uvicorn main:app --reload
 ```
 
+### Interactive API docs
+Now go to http://127.0.0.1:8000/docs.
+
 ### Testing
 To run the tests, run:
 

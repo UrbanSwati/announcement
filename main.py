@@ -18,6 +18,7 @@ def health_check():
 @app.post("/anouncement/")
 def create_anouncement(anouncement: Announcement, status_code=201):
     try:
+        # TODO: store anouncement in database and have a state for sent
         send_announcement(anouncement)
     except Exception as e:
         trace_id = uuid.uuid4()
